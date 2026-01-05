@@ -91,6 +91,9 @@ class nn: #Neural Networks
             self.db = np.sum(dvalues, axis=0, keepdims=True) #Keeps the dimensions same, keepdims
             # Gradient for the previous layer
             self.dinputs = np.dot(dvalues, self.w.T)
+        def update_params(self, alpha):
+            self.w -= alpha * self.dw
+            self.b -= alpha * self.db
     class ReLU:
         def forward(self, inputs):
             self.inputs = inputs
