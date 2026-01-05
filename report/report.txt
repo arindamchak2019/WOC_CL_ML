@@ -1,0 +1,14 @@
+Project Report
+Event: Winter of Code (WOC) 
+Project: Build Your Own Machine Learning Library and a Competition
+1)	Kaggle Competition
+To approach the specific problem of classification, I tried Logistical Regression first, without Regularization, which was prone to overfitting, which I tested by splitting the train data into cross validation set (20%) and train set (80%). I then experimented with different lambda values, for each case. I found that lambda value 3, and 9.5 gave pretty good accuracy while keeping cost functions of both sets low. Here lambda is Regularization factor.
+I had 2 approaches for regularization in my 2 submissions to the competition. One took trial and error approach for lambda, testing different values of learning rate and lambda.
+My second approach was just to keep a fixed lambda= 3. It seems that this one worked better, as a greater lambda is prone to underfitting. 
+I had thought of using Neural Networks for this competition, but decided not to at the end moment, for my prior tries showed a lesser accuracy. 
+2)	Building the ML Library from Scratch
+To build the library from scratch, weeks were spent trying to learn about the different types of approaches, like Linear, Logistical Regressions, Neural Networks, etc. While I couldn’t build all the features, I tried my best to build whatever I could nicely. I wrote linear and logistical regression functions first but hit a roadblock trying to code Neural Network, especially in forward and backward, and in AdamOptimizer. I have hence omitted using it in this library, but hope that in the near future, I can write it on my own.
+I have also implemented KNNs in the library, which also required some thought, since I had not written code for it before, and time was ticking for submission.
+My future goal is to try and implement KMeans and Decision Trees in this library, post Winter of Code.
+3)	Unique Observations and Uses
+Some of my observations were how much my predictions improved with Regularization, and how much I have learnt throughout this whole journey. 
